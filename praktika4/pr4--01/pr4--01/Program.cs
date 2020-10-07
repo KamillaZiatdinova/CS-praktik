@@ -1,17 +1,19 @@
 ﻿using System;
-using System.Collections;
 
-namespace pr4
+using System.Collections;
+namespace ConsoleApp2
 {
-  
   class Program
   {
     static void Main(string[] args)
     {
       Queue queue = new Queue();
 
-      queue.Enqueue("First"); queue.Enqueue("Second"); queue.Enqueue("Third"); queue.Enqueue("Fourth");
-    while (queue.Count > 0)
+      queue.Enqueue("First");
+      queue.Enqueue("Second");
+      queue.Enqueue("Third");
+      queue.Enqueue("Fourth");
+      while (queue.Count > 0)
       {
         object obj = queue.Dequeue();
         Console.WriteLine("From Queue: {0}", obj);
@@ -20,4 +22,3 @@ namespace pr4
   }
 
 }
-
